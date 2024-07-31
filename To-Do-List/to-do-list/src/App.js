@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import TaskManagerWrapper from "./components/To-do/TaskManagerWrapper";
+import TaskForm from "./components/To-do/TaskForm";
 function App() {
+  const taskninja = `${process.env.PUBLIC_URL}/assets/images/taskninja.png`;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <nav>
+        <img src={taskninja} alt="taskninja" />
+        <h1>Task Ninja</h1>
+      </nav>
+      <TaskManagerWrapper />
     </div>
   );
 }
