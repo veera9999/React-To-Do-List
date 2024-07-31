@@ -119,9 +119,10 @@ function ChildB({ setCount }) {
 🎯 The key should be consistent and stable across re-renders to ensure correct behavior. Avoid using indexes as keys if the order of items can change because it can lead to incorrect updates.
 
 🎯 Without keys, React may produce unexpected results, like:
-. Incorrect item reordering
-. Inefficient updates
-. Loss of component state between re-renders
+
+- Incorrect item reordering
+- Inefficient updates
+- Loss of component state between re-renders
 
 ## What is synthetic event?
 
@@ -163,10 +164,11 @@ export default App;
 # Synthetic Event Properties:
 
 🎯Synthetic events contain the same properties and methods as native events, such as:
-_ event.target
-_ event.currentTarget
-_ event.preventDefault()
-_ event.stopPropagation()
+
+- event.target
+- event.currentTarget
+- event.preventDefault()
+- event.stopPropagation()
 
 # Synthetic Event Pooling:
 
